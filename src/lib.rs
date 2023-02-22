@@ -1,6 +1,7 @@
 use object::{read::elf::ElfFile32, LittleEndian, Object, ObjectSection};
 use std::path::Path;
 
+#[derive(Debug)]
 pub enum Error {
     Object(object::Error),
     SectionMissing(&'static str),
